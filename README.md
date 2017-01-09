@@ -29,7 +29,7 @@ I have created two python files one to build a model and another to test the mod
 
 Execute the following command to get a learned model from a training dataset:
 
-- python best_config_train.py Testing_Samples_Location.
+python best_config_train.py Testing_Samples_Location.
 
 Execute the following command to pre-learned model run on a test dataset:
 
