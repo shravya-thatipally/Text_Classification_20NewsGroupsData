@@ -19,4 +19,30 @@ Classifiers used - Naive Bayes, Logistic Regression, Support Vector Machines, an
 Configurations used:
 1. Unigram Baseline (UB) -- Basic sentence segmentation and tokenization. Use all words.
 2. Bigram Baseline (BB) -- Use all bigrams. (e.g. I ran a race => {I ran, ran a, a race}. )
-Applied all the classifiers for these configurations and selected best configuration from that and applied some
+Applied all the classifiers for these configurations and selected best model from that and applied some more techniques namely:
+1) Feature representations
+2) Feature selection
+3) Hyperparameters
+
+My Best configuration is obtained by removing stop words with L2 penalization on SVM. I have used SGDclassifier with hinge loss ( a linear SVM, as the number of features is more than 10000 most likely points are linearly separable ) as the classifier with above mentioned.
+I have created two python files one to build a model and another to test the model:
+
+Execute the following command to get a learned model from a training dataset:
+
+- python best_config_train.py Testing_Samples_Location.
+
+Execute the following command to pre-learned model run on a test dataset:
+
+python best_config_test.py Testing_Samples_Location
+
+Exploration for best params in Unigram Configuration: 
+
+python Analysis_config.py Training_samples_location Testing_Samples_Location
+
+Code for Learning curves plot:
+python Learning_curves.py
+
+Baseline models:
+python Unigram_bigram_models.py Training_samples_location Testing_Samples_Location
+
+
