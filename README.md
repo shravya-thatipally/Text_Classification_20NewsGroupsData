@@ -9,11 +9,6 @@ Selected 4 classes for this project.
 3. soc.religion.christian
 4. talk.religion.misc
 
-In each class, there two sets of documents,one for training and one for test. The format of each document is as follows:
-
-1) Header - Consists of fields such as <From>, <Subject>, <Organization> and <Lines> fields. 
-2) Body - The main body of the document.
-
 Classifiers used - Naive Bayes, Logistic Regression, Support Vector Machines, and Random Forests.
  
 Configurations used:
